@@ -2,9 +2,13 @@
 name = "to-syn-value"
 version = "0.1.0"
 authors = ["Mark Thom <markjordanthom@gmail.com>"]
+description = "Defines a derive macro to implement a trait converting values to instances of syn::ToDeriveInput."
+readme = "README.md"
+repository = "https://github.com/mthom/to-syn-value"
+license = "BSD-3-Clause"
 edition = "2021"
-publish = false
+publish = true
 
 [dependencies]
-syn = { version = "*", features = ['full', 'visit', 'extra-traits'] }
-to-syn-value_derive = {  git = "https://github.com/mthom/to-syn-value_derive" }
+syn = { version = "1.0.88", features = ['full', 'visit', 'extra-traits'] }
+to-syn-value_derive = "0.1.0"
